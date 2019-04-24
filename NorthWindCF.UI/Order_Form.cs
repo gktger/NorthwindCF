@@ -11,16 +11,23 @@ using System.Windows.Forms;
 
 namespace NorthWindCF.UI
 {
-    public partial class Form1 : Form
+    public partial class Order_Form : Form
     {
-        public Form1()
+        public Order_Form()
         {
             InitializeComponent();
         }
 
-        private void btn_Getir_Click(object sender, EventArgs e)
+       // public string CustomerID;
+
+
+        public void ShowDialog(string customerID)
         {
-            dataGridView1.DataSource=CustomerBLL.GetCustomers();
+            dataGridView1.DataSource = OrderBLL.GetOrders(customerID);
+            this.ShowDialog();
         }
+
+
+
     }
 }

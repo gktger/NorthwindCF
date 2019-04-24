@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace NorthWindCF.DAL
 {
-    public class NorthWindDbContext :DbContext
+    public class NorthWindDbContext : DbContext
     {
-        public NorthWindDbContext():base("name=ConnextionString")
+        public NorthWindDbContext() : base("name=ConnextionString")
         {
             Database.SetInitializer<NorthWindDbContext>(null);
         }
@@ -19,8 +19,12 @@ namespace NorthWindCF.DAL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new CustomerMapping());
+            modelBuilder.Configurations.Add(new OrderMapping());
+
         }
 
         public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }
+
     }
 }
