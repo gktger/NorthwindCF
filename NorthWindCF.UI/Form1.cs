@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NorthWindCF.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace NorthWindCF.UI
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btn_Getir_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource=CustomerBLL.GetCustomers();
         }
     }
 }
