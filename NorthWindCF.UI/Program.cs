@@ -16,7 +16,7 @@ namespace NorthWindCF.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Customer_Form());
+            Application.Run(new MainForm());
         }
     }
 }

@@ -11,7 +11,7 @@ namespace NorthWindCF.DAL
 {
     public class NorthWindDbContext : DbContext
     {
-        public NorthWindDbContext() : base("name=ConnextionString")
+        public NorthWindDbContext() : base("name=ConnectionString")
         {
             Database.SetInitializer<NorthWindDbContext>(null);
         }

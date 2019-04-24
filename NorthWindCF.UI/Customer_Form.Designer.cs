@@ -41,30 +41,33 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 96);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 118);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(529, 342);
+            this.dataGridView1.Size = new System.Drawing.Size(705, 421);
             this.dataGridView1.TabIndex = 0;
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.orderToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(105, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(117, 28);
             // 
             // orderToolStripMenuItem
             // 
             this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
-            this.orderToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
+            this.orderToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
             this.orderToolStripMenuItem.Text = "Order";
             this.orderToolStripMenuItem.Click += new System.EventHandler(this.orderToolStripMenuItem_Click);
             // 
             // btn_Getir
             // 
-            this.btn_Getir.Location = new System.Drawing.Point(466, 44);
+            this.btn_Getir.Location = new System.Drawing.Point(621, 54);
+            this.btn_Getir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Getir.Name = "btn_Getir";
-            this.btn_Getir.Size = new System.Drawing.Size(75, 23);
+            this.btn_Getir.Size = new System.Drawing.Size(100, 28);
             this.btn_Getir.TabIndex = 1;
             this.btn_Getir.Text = "Getir";
             this.btn_Getir.UseVisualStyleBackColor = true;
@@ -72,13 +75,14 @@
             // 
             // Customer_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 450);
+            this.ClientSize = new System.Drawing.Size(744, 554);
             this.Controls.Add(this.btn_Getir);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Customer_Form";
-            this.Text = "Form1";
+            this.Text = "Customer";
             this.Load += new System.EventHandler(this.Customer_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
