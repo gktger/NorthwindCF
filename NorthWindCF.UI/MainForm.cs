@@ -38,5 +38,11 @@ namespace NorthWindCF.UI
                 frm.Show();
             }
         }
+
+        private void searchOrderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OrderList_Form frm = new OrderList_Form();
+            frm.Show();
+        }
     }
 }
